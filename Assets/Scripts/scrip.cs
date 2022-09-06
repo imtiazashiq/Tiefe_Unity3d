@@ -30,34 +30,7 @@ void Update()
 lift();
 
 }
-/*    void OnTriggerEnter(Collider collision) 
- {
-     
-         if(collision.gameObject.tag == "plane")  // or if(gameObject.CompareTag("YourWallTag"))
-         {
-             if(planecollider==true){
-                     Debug.Log("collid with plane");
-             }
-}
- 
- 
-if(collision.gameObject.tag == "cube")  // or if(gameObject.CompareTag("YourWallTag"))
-         {
-            if(tilecollider==true){
-                     Debug.Log("collid with plane");
-             }
-}
-}
 
-void OnTriggerExit(Collider collision){
-    if(collision.gameObject.tag == "cube")  // or if(gameObject.CompareTag("YourWallTag"))
-         {
-              if(tilecollider){
-           tilecollider=false;
-           Debug.Log("collider off");
-             }
-         }
-} */
 
   private  void OnCollisionEnter(Collision collision) 
  {
@@ -80,37 +53,13 @@ void OnTriggerExit(Collider collision){
               }
       else if(collision.gameObject.tag== "manfall"){
           Debug.Log("falling");
-         // m_Cameratwo.enabled = true;
-         // m_MainCamera.enabled = false;
-         // m_MainCamera.gameObject.SetActive(false);
-        // m_Cameratwo.gameObject.SetActive(true);
+         
           ob1.SetActive(true);
          // ob3.SetActive(false);
 
 
       }
       }
-  /*     void OnCollisionStay(Collision collision) 
-      {
-     
-       //  if(collision.gameObject.tag == "plane")  // or if(gameObject.CompareTag("YourWallTag"))
-        //  {
-            
-        //      Debug.Log("collid with plane");
-         //     planecollider= true;
-                   
-                     
-        //  }                 
-           if(collision.gameObject.tag == "cube")  // or if(gameObject.CompareTag("YourWallTag"))
-          {
-            
-              Debug.Log("stay stay stay stay stay");
-              tilecollider= true;
-                    
-                     
-          }
-
-                    */
         
  private void OnCollisionExit(Collision col) 
  {
